@@ -68,7 +68,7 @@ pqc-handshake-memory-forensics/
 ## 4. Cara Reproduksi Lab
 
 ### Prasyarat Lingkungan
-- **Host**: Arch Linux (`x86_64`) dengan `openssh`, `python3`, dan antarmuka VirtualBox Host-Only `vboxnet0`.
+- **Host Pengendali (Control Host)**: Linux Workstation (`x86_64`) dengan `openssh`, `python3`, dan antarmuka VirtualBox Host-Only `vboxnet0`.
 - **Target VM**: Debian 13 (`pqc-indra`, IP `192.168.56.10` pada *snapshot* `clean-pqc-lab`) dengan `/sys/kernel/btf/vmlinux`, `clang`, `llvm`, `libbpf-dev`, `bpftool`, dan `openssh-server-dbgsym`.
 
 ### Langkah 1: Konfigurasi Autentikasi Kunci SSH ke Target VM
@@ -79,7 +79,7 @@ ssh-copy-id -i ~/.ssh/id_ed25519_silentium.pub indra@192.168.56.10
 ```
 
 ### Langkah 2: Menjalankan Benchmark Otomatis End-to-End (Direkomendasikan)
-Jalankan [scripts/run_benchmark.sh](file:///home/indra/projects/pqc-handshake-memory-forensics/scripts/run_benchmark.sh) dari mesin host Arch Linux. Skrip ini secara otomatis menyinkronkan `src/` ke `indra@192.168.56.10:~/work/src`, mengompilasi instrumen dengan `make`, menjalankan `loader` dengan `sudo`, memicu 20 sesi SSH terisolasi (`-o KexAlgorithms=mlkem768x25519-sha256`), menarik log JSON ke `results/benchmark_metrics.json`, dan mencetak ringkasan statistik:
+Jalankan [scripts/run_benchmark.sh](file:///home/indra/projects/pqc-handshake-memory-forensics/scripts/run_benchmark.sh) dari mesin host pengendali (*Control Host*). Skrip ini secara otomatis menyinkronkan `src/` ke `indra@192.168.56.10:~/work/src`, mengompilasi instrumen dengan `make`, menjalankan `loader` dengan `sudo`, memicu 20 sesi SSH terisolasi (`-o KexAlgorithms=mlkem768x25519-sha256`), menarik log JSON ke `results/benchmark_metrics.json`, dan mencetak ringkasan statistik:
 
 ```bash
 ./scripts/run_benchmark.sh

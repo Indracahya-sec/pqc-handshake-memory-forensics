@@ -4,7 +4,7 @@
 
 | Komponen | Spesifikasi Teknis | Peran |
 | :--- | :--- | :--- |
-| **Host Machine** | Arch Linux (`x86_64`) | Pengembang kode sumber, repositori Git, dan pemicu 20 sesi benchmark SSH ([run_benchmark.sh](file:///home/indra/projects/pqc-handshake-memory-forensics/scripts/run_benchmark.sh)) |
+| **Control Host** | Linux Workstation (`x86_64`) | Pengembang kode sumber, repositori Git, dan pemicu 20 sesi benchmark SSH ([run_benchmark.sh](file:///home/indra/projects/pqc-handshake-memory-forensics/scripts/run_benchmark.sh)) |
 | **Jaringan Lab** | VirtualBox Host-Only (`vboxnet0`), Subnet `192.168.56.0/24` | Kanal komunikasi terisolasi penuh (NAT Adapter 1 dinonaktifkan / *air-gapped*) |
 | **Target VM** | Debian 13 (Trixie), Hostname `pqc-indra`, IP `192.168.56.10` | Lingkungan kompilasi CO-RE (`clang`, `bpftool`, `libbpf-dev`) dan eksekusi target `/usr/lib/openssh/sshd-auth` |
 | **Snapshot Baseline** | `clean-pqc-lab` |の状態 dasar dengan `/sys/kernel/btf/vmlinux` dan `openssh-server-dbgsym` terpasang |
