@@ -1,0 +1,64 @@
+# AI Agent & Internal Prompt Instructions
+AGENT.md
+AGENTS.md
+SKILL.md
+CLAUDE.md
+.agent/
+.agents/
+.gemini/
+.claude/
+.cursor/
+
+# eBPF CO-RE Generated Headers, Objects, & Compiled Binaries
+src/loader
+src/collector/loader
+src/ebpf/vmlinux.h
+src/ebpf/*.bpf.o
+src/ebpf/*.skel.h
+*.o
+*.so
+*.a
+*.out
+
+# Sensitive Cryptographic Material, Raw Memory Dumps, & Credentials
+*.key
+*.pem
+*.pub
+*.p12
+*.pfx
+*.Der
+*.cer
+*.crt
+id_rsa*
+id_ed25519*
+authorized_keys
+known_hosts*
+.env
+.env.*
+*.core
+core
+core.*
+*.dump
+*.raw
+*.bin
+*.mem
+*.pcap
+*.pcapng
+
+# Temporary Logs & Unredacted Telemetry Artifacts
+results/*.log
+results/*_raw*
+results/*_dump*
+results/manual_*.json
+/tmp/
+
+# OS & Editor Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+__pycache__/
+*.pyc
+

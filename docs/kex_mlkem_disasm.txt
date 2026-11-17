@@ -1,0 +1,219 @@
+Dump of assembler code for function kex_kem_mlkem768x25519_dec:
+   0x00000000000a32d0 <+0>:	endbr64
+   0x00000000000a32d4 <+4>:	push   %r15
+   0x00000000000a32d6 <+6>:	push   %r14
+   0x00000000000a32d8 <+8>:	push   %r13
+   0x00000000000a32da <+10>:	push   %r12
+   0x00000000000a32dc <+12>:	push   %rbp
+   0x00000000000a32dd <+13>:	push   %rbx
+   0x00000000000a32de <+14>:	sub    $0x1000,%rsp
+   0x00000000000a32e5 <+21>:	orq    $0x0,(%rsp)
+   0x00000000000a32ea <+26>:	sub    $0x1000,%rsp
+   0x00000000000a32f1 <+33>:	orq    $0x0,(%rsp)
+   0x00000000000a32f6 <+38>:	sub    $0x1000,%rsp
+   0x00000000000a32fd <+45>:	orq    $0x0,(%rsp)
+   0x00000000000a3302 <+50>:	sub    $0xd08,%rsp
+   0x00000000000a3312 <+66>:	mov    %rdi,0x98(%rsp)
+   0x00000000000a331a <+74>:	mov    %rdi,%r14
+   0x00000000000a3325 <+85>:	mov    %rsi,%rbp
+   0x00000000000a3328 <+88>:	mov    %rdx,0xa0(%rsp)
+   0x00000000000a3330 <+96>:	mov    %fs:0x28,%rbx
+   0x00000000000a3339 <+105>:	mov    %rbx,0x3cf8(%rsp)
+   0x00000000000a3341 <+113>:	xor    %ebx,%ebx
+
+194	in ../../kexmlkem768x25519.c
+   0x00000000000a48fe <+5678>:	movq   $0x0,0x88(%rsp)
+   0x00000000000a490a <+5690>:	lea    0x3370(%rsp),%rbx
+   0x00000000000a4912 <+5698>:	jmp    0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+195	in ../../kexmlkem768x25519.c
+   0x00000000000a330e <+62>:	pxor   %xmm0,%xmm0
+   0x00000000000a3343 <+115>:	mov    %rdi,0x58(%rsp)
+   0x00000000000a334f <+127>:	movaps %xmm0,0x3270(%rsp)
+   0x00000000000a3357 <+135>:	movaps %xmm0,0x3280(%rsp)
+
+196	in ../../kexmlkem768x25519.c
+
+197	in ../../kexmlkem768x25519.c
+   0x00000000000a335f <+143>:	movaps %xmm0,0x3370(%rsp)
+   0x00000000000a3367 <+151>:	movaps %xmm0,0x3380(%rsp)
+   0x00000000000a3372 <+162>:	movaps %xmm0,0x3390(%rsp)
+   0x00000000000a338a <+186>:	movaps %xmm0,0x33a0(%rsp)
+
+198	in ../../kexmlkem768x25519.c
+199	in ../../kexmlkem768x25519.c
+200	in ../../kexmlkem768x25519.c
+201	in ../../kexmlkem768x25519.c
+202	in ../../kexmlkem768x25519.c
+203	in ../../kexmlkem768x25519.c
+   0x00000000000a3348 <+120>:	movq   $0x0,(%rdx)
+
+204	in ../../kexmlkem768x25519.c
+205	in ../../kexmlkem768x25519.c
+206	in ../../kexmlkem768x25519.c
+207	in ../../kexmlkem768x25519.c
+
+208	in ../../kexmlkem768x25519.c
+   0x00000000000a33a0 <+208>:	mov    %rsi,%rdi
+   0x00000000000a33a3 <+211>:	call   0x479a0 <sshbuf_len>
+   0x00000000000a33a8 <+216>:	cmp    $0x460,%rax
+   0x00000000000a33ae <+222>:	jne    0xa48f0 <kex_kem_mlkem768x25519_dec+5664>
+
+209	in ../../kexmlkem768x25519.c
+   0x00000000000a48f0 <+5664>:	mov    $0xffffffeb,%r12d
+   0x00000000000a48f6 <+5670>:	lea    0x3270(%rsp),%rbp
+
+210	in ../../kexmlkem768x25519.c
+211	in ../../kexmlkem768x25519.c
+212	in ../../kexmlkem768x25519.c
+   0x00000000000a33b4 <+228>:	mov    %rbp,%rdi
+   0x00000000000a33b7 <+231>:	call   0x47af0 <sshbuf_ptr>
+   0x00000000000a33bc <+236>:	mov    %rax,0x90(%rsp)
+   0x00000000000a33c4 <+244>:	mov    %rax,%rbp
+
+213	in ../../kexmlkem768x25519.c
+   0x00000000000a484f <+5503>:	mov    0x90(%rsp),%rsi
+   0x00000000000a4867 <+5527>:	add    $0x440,%rsi
+
+214	in ../../kexmlkem768x25519.c
+215	in ../../kexmlkem768x25519.c
+   0x00000000000a33c7 <+247>:	call   0x471a0 <sshbuf_new>
+   0x00000000000a33cc <+252>:	mov    %rax,0x88(%rsp)
+   0x00000000000a33d4 <+260>:	test   %rax,%rax
+   0x00000000000a33d7 <+263>:	je     0xa4917 <kex_kem_mlkem768x25519_dec+5703>
+
+216	in ../../kexmlkem768x25519.c
+   0x00000000000a4917 <+5703>:	mov    $0xfffffffe,%r12d
+   0x00000000000a491d <+5709>:	lea    0x3270(%rsp),%rbp
+   0x00000000000a4925 <+5717>:	lea    0x3370(%rsp),%rbx
+   0x00000000000a492d <+5725>:	jmp    0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+217	in ../../kexmlkem768x25519.c
+218	in ../../kexmlkem768x25519.c
+219	in ../../kexmlkem768x25519.c
+220	in ../../kexmlkem768x25519.c
+221	in ../../kexmlkem768x25519.c
+222	in ../../kexmlkem768x25519.c
+223	in ../../kexmlkem768x25519.c
+224	in ../../kexmlkem768x25519.c
+225	in ../../kexmlkem768x25519.c
+226	in ../../kexmlkem768x25519.c
+227	in ../../kexmlkem768x25519.c
+228	in ../../kexmlkem768x25519.c
+229	in ../../kexmlkem768x25519.c
+230	in ../../kexmlkem768x25519.c
+   0x00000000000a44f1 <+4641>:	lea    0x3270(%rsp),%rbp
+   0x00000000000a4756 <+5254>:	mov    %r14,%rdi
+   0x00000000000a4772 <+5282>:	call   0x51190 <sshbuf_put>
+   0x00000000000a4777 <+5287>:	mov    %eax,%r12d
+   0x00000000000a477a <+5290>:	test   %eax,%eax
+   0x00000000000a477c <+5292>:	je     0xa484f <kex_kem_mlkem768x25519_dec+5503>
+
+231	in ../../kexmlkem768x25519.c
+232	in ../../kexmlkem768x25519.c
+   0x00000000000a4857 <+5511>:	mov    0x98(%rsp),%r15
+   0x00000000000a485f <+5519>:	mov    $0x1,%ecx
+   0x00000000000a4864 <+5524>:	mov    %r14,%rdx
+   0x00000000000a486e <+5534>:	lea    0x1a8(%r15),%rdi
+   0x00000000000a4875 <+5541>:	call   0x8e080 <kexc25519_shared_key_ext>
+   0x00000000000a487a <+5546>:	mov    %eax,%r12d
+   0x00000000000a487d <+5549>:	test   %eax,%eax
+   0x00000000000a487f <+5551>:	js     0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+233	in ../../kexmlkem768x25519.c
+234	in ../../kexmlkem768x25519.c
+235	in ../../kexmlkem768x25519.c
+   0x00000000000a4885 <+5557>:	mov    0x98(%r15),%edi
+   0x00000000000a488c <+5564>:	mov    $0x40,%ecx
+   0x00000000000a4891 <+5569>:	mov    %rbx,%rdx
+   0x00000000000a4894 <+5572>:	mov    %r14,%rsi
+   0x00000000000a4897 <+5575>:	call   0x84a90 <ssh_digest_buffer>
+   0x00000000000a489c <+5580>:	mov    %eax,%r12d
+   0x00000000000a489f <+5583>:	test   %eax,%eax
+   0x00000000000a48a1 <+5585>:	jne    0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+236	in ../../kexmlkem768x25519.c
+237	in ../../kexmlkem768x25519.c
+238	in ../../kexmlkem768x25519.c
+239	in ../../kexmlkem768x25519.c
+240	in ../../kexmlkem768x25519.c
+241	in ../../kexmlkem768x25519.c
+242	in ../../kexmlkem768x25519.c
+243	in ../../kexmlkem768x25519.c
+   0x00000000000a48a7 <+5591>:	mov    %r14,%rdi
+   0x00000000000a48aa <+5594>:	call   0x476d0 <sshbuf_reset>
+
+244	in ../../kexmlkem768x25519.c
+   0x00000000000a48af <+5599>:	mov    0x98(%r15),%edi
+   0x00000000000a48b6 <+5606>:	call   0x846b0 <ssh_digest_bytes>
+   0x00000000000a48bb <+5611>:	mov    %rbx,%rsi
+   0x00000000000a48be <+5614>:	mov    %r14,%rdi
+   0x00000000000a48c1 <+5617>:	mov    %rax,%rdx
+   0x00000000000a48c4 <+5620>:	call   0x518f0 <sshbuf_put_string>
+   0x00000000000a48c9 <+5625>:	mov    %eax,%r12d
+   0x00000000000a48cc <+5628>:	test   %eax,%eax
+   0x00000000000a48ce <+5630>:	jne    0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+245	in ../../kexmlkem768x25519.c
+246	in ../../kexmlkem768x25519.c
+247	in ../../kexmlkem768x25519.c
+248	in ../../kexmlkem768x25519.c
+249	in ../../kexmlkem768x25519.c
+250	in ../../kexmlkem768x25519.c
+251	in ../../kexmlkem768x25519.c
+
+252	in ../../kexmlkem768x25519.c
+   0x00000000000a48d4 <+5636>:	mov    0xa0(%rsp),%rax
+   0x00000000000a48e8 <+5656>:	mov    %r14,(%rax)
+
+253	in ../../kexmlkem768x25519.c
+   0x00000000000a48dc <+5644>:	movq   $0x0,0x88(%rsp)
+   0x00000000000a48eb <+5659>:	jmp    0xa4782 <kex_kem_mlkem768x25519_dec+5298>
+
+254	in ../../kexmlkem768x25519.c
+255	in ../../kexmlkem768x25519.c
+256	in ../../kexmlkem768x25519.c
+257	in ../../kexmlkem768x25519.c
+258	in ../../kexmlkem768x25519.c
+259	in ../../kexmlkem768x25519.c
+   0x00000000000a47ce <+5374>:	mov    0x88(%rsp),%rdi
+   0x00000000000a47d6 <+5382>:	call   0x47430 <sshbuf_free>
+
+260	in ../../kexmlkem768x25519.c
+
+261	in ../../kexmlkem768x25519.c
+   0x00000000000a47db <+5387>:	mov    0x3cf8(%rsp),%rax
+   0x00000000000a47e3 <+5395>:	sub    %fs:0x28,%rax
+   0x00000000000a47ec <+5404>:	jne    0xa4932 <kex_kem_mlkem768x25519_dec+5730>
+   0x00000000000a47f2 <+5410>:	add    $0x3d08,%rsp
+   0x00000000000a47f9 <+5417>:	mov    %r12d,%eax
+   0x00000000000a47fc <+5420>:	pop    %rbx
+   0x00000000000a47fd <+5421>:	pop    %rbp
+   0x00000000000a47fe <+5422>:	pop    %r12
+   0x00000000000a4800 <+5424>:	pop    %r13
+   0x00000000000a4802 <+5426>:	pop    %r14
+   0x00000000000a4804 <+5428>:	pop    %r15
+   0x00000000000a4806 <+5430>:	xor    %edx,%edx
+   0x00000000000a4808 <+5432>:	xor    %ecx,%ecx
+   0x00000000000a480a <+5434>:	xor    %esi,%esi
+   0x00000000000a480c <+5436>:	xor    %edi,%edi
+   0x00000000000a480e <+5438>:	pxor   %xmm0,%xmm0
+   0x00000000000a4812 <+5442>:	pxor   %xmm1,%xmm1
+   0x00000000000a4816 <+5446>:	pxor   %xmm2,%xmm2
+   0x00000000000a481a <+5450>:	pxor   %xmm3,%xmm3
+   0x00000000000a481e <+5454>:	pxor   %xmm4,%xmm4
+   0x00000000000a4822 <+5458>:	pxor   %xmm5,%xmm5
+   0x00000000000a4826 <+5462>:	pxor   %xmm6,%xmm6
+   0x00000000000a482a <+5466>:	pxor   %xmm7,%xmm7
+   0x00000000000a482e <+5470>:	xor    %r8d,%r8d
+   0x00000000000a4831 <+5473>:	xor    %r9d,%r9d
+   0x00000000000a4834 <+5476>:	xor    %r10d,%r10d
+   0x00000000000a4837 <+5479>:	xor    %r11d,%r11d
+   0x00000000000a483a <+5482>:	pxor   %xmm8,%xmm8
+   0x00000000000a483f <+5487>:	pxor   %xmm9,%xmm9
+   0x00000000000a4844 <+5492>:	pxor   %xmm10,%xmm10
+   0x00000000000a4849 <+5497>:	pxor   %xmm11,%xmm11
+   0x00000000000a484e <+5502>:	ret
+   0x00000000000a4932 <+5730>:	call   0xcfd0 <__stack_chk_fail@plt>
+
+End of assembler dump.
